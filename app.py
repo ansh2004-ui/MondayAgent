@@ -63,7 +63,7 @@ def fetch_board(board_id):
     data = response.json()
 
     if "errors" in data:
-        raise Exception(f"Monday API error: {data['errors']}")
+        raise Exception(data["errors"])
 
     items = data["data"]["boards"][0]["items_page"]["items"]
 
@@ -75,7 +75,6 @@ def fetch_board(board_id):
         rows.append(row)
 
     return pd.DataFrame(rows)
-
 # ----------------------------
 # HELPERS
 # ----------------------------
@@ -297,6 +296,7 @@ with tab2:
         else:
 
             st.write("Could you clarify your request?")
+
 
 
 

@@ -7,7 +7,7 @@ from groq import Groq
 # CONFIG
 # ----------------------------
 
-MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTY3NDcyMiwiYWFpIjoxMSwidWlkIjoxMDAyODQxMDUsImlhZCI6IjIwMjYtMDItMjVUMTA6NDA6MTcuMjE1WiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwMjg3LCJyZ24iOiJhcHNlMiJ9.QvjJofIgJbUJtTvE3TNqH-RdRks7R67-dMxf9Y2lLGY"
+MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTY4OTk5NSwiYWFpIjoxMSwidWlkIjoxMDAyODQxMDUsImlhZCI6IjIwMjYtMDItMjVUMTE6MjI6MDcuMDAwWiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwMjg3LCJyZ24iOiJhcHNlMiJ9.xv0mbMyq6Ht4DekuvdTwX9ebyu7nafkYjzxQrsJumis"
 
 GROQ_API_KEY = "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"
 
@@ -296,6 +296,7 @@ with tab2:
         else:
 
             st.write("Could you clarify your request?")
+
 
 
 

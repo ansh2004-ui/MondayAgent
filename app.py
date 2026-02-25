@@ -9,7 +9,7 @@ from groq import Groq
 
 MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTY3NDcyMiwiYWFpIjoxMSwidWlkIjoxMDAyODQxMDUsImlhZCI6IjIwMjYtMDItMjVUMTA6NDA6MTcuMjE1WiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwMjg3LCJyZ24iOiJhcHNlMiJ9.QvjJofIgJbUJtTvE3TNqH-RdRks7R67-dMxf9Y2lLGY"
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 DEALS_BOARD_ID = 5026840375      # 👈 replace
 WORK_ORDERS_BOARD_ID = 5026840492 # 👈 replace
@@ -297,6 +297,7 @@ with tab2:
         else:
 
             st.write("Could you clarify your request?")
+
 
 
 

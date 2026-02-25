@@ -46,11 +46,16 @@ def fetch_board(board_id):
     }}
     """
 
-    headers = {"Authorization": MONDAY_API_KEY}
+    headers = {
+    "Authorization": MONDAY_API_KEY,
+    "Content-Type": "application/json"
+    }
     response = requests.post(MONDAY_URL, json={"query": query}, headers=headers)
 
-    if response.status_code != 200:
-        raise Exception("Failed to fetch board")
+    data = response.json()
+
+    if "errors" in data:
+        raise Exception(f"Monday API error: {data['errors']}")
 
     data = response.json()
     items = data["data"]["boards"][0]["items_page"]["items"]
@@ -285,3 +290,4 @@ with tab2:
         else:
 
             st.write("Could you clarify your request?")
+

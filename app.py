@@ -52,12 +52,14 @@ def fetch_board(board_id):
     }
     response = requests.post(MONDAY_URL, json={"query": query}, headers=headers)
 
+    if response.status_code != 200:
+        raise Exception(response.text)
+        
     data = response.json()
 
     if "errors" in data:
-        raise Exception(f"Monday API error: {data['errors']}")
+        raise Exception(data['errors']")
 
-    data = response.json()
     items = data["data"]["boards"][0]["items_page"]["items"]
 
     rows = []
@@ -290,4 +292,5 @@ with tab2:
         else:
 
             st.write("Could you clarify your request?")
+
 

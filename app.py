@@ -7,7 +7,7 @@ from groq import Groq
 # CONFIG
 # ----------------------------
 
-MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTY1NjE5OCwiYWFpIjoxMSwidWlkIjoxMDAyODQxMDUsImlhZCI6IjIwMjYtMDItMjVUMDk6NTI6NDYuNzQ1WiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwMjg3LCJyZ24iOiJhcHNlMiJ9.WW-12nqFgC1PqW8EQgg9d7PPHEXA6iv0nSYKv8KVec8"
+MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTY2NDk0MiwiYWFpIjoxMSwidWlkIjoxMDAyODQxMDUsImlhZCI6IjIwMjYtMDItMjVUMTA6MTQ6MTIuODY1WiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwMjg3LCJyZ24iOiJhcHNlMiJ9.H6ZfBydllEbkbYwNhrG0-VGdvM4q2lCenHsAkwnz-BY"
 
 GROQ_API_KEY = "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"
 
@@ -283,4 +283,5 @@ with tab2:
             st.bar_chart(revenue_by_sector(deals_df))
 
         else:
+
             st.write("Could you clarify your request?")
